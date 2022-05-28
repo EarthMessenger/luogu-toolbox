@@ -1,0 +1,34 @@
+{
+  "name": "luogu-toolbox",
+  "version": "0.0.1",
+  "description": "a useful userscript for luogu",
+  "scripts": {
+    "build": "rollup --config rollup.config.js",
+    "dev": "rollup --config rollup.config.js --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/earthmessenger/luogu-toolbox.git"
+  },
+  "keywords": [
+    "userscript",
+    "luogu"
+  ],
+  "author": "earthmessenger",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/earthmessenger/luogu-toolbox/issues"
+  },
+  "homepage": "https://github.com/earthmessenger/luogu-toolbox#readme",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^22.0.0",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@rollup/plugin-typescript": "^8.3.2",
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.14",
+    "rollup": "^2.74.1",
+    "rollup-plugin-postcss": "^4.0.2",
+    "typescript": "^4.7.2",
+    "typescript-plugin-css-modules": "^3.4.0"
+  }
+}

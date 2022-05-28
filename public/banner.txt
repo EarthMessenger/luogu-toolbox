@@ -1,0 +1,9 @@
+// ==UserScript==
+// @name        Luogu Toolbox
+// @namespace   Violentmonkey Scripts
+// @match       https://www.luogu.com.cn/*
+// @grant       none
+// @version     PKG.VERSION
+// @author      PKG.AUTHOR
+// @description PKG.DESCRIPTION
+// ==/UserScript==
