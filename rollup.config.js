@@ -22,6 +22,7 @@ export default defineConfig({
     input: path.resolve(__dirname, "src/index.ts"),
     output: [
         {
+            name: "luoguToolbox",
             file: path.resolve(__dirname, "dist/luogu-toolbox.user.js"),
             format: "iife",
             banner: getBanner(),

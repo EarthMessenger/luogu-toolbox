@@ -4,8 +4,8 @@ interface DivElementInterface {
     text?: string;
 }
 
-const newDiv = (config: DivElementInterface = {}) => {
-    const ele = document.createElement("div");
+const newDiv = (config: DivElementInterface = {}, tagName: keyof HTMLElementTagNameMap = "div") => {
+    const ele = document.createElement(tagName);
     if (config.id) ele.id = config.id;
     if (config.classes) {
         if (Array.isArray(config.classes)) ele.classList.add(...config.classes);

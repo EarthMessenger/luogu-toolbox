@@ -5,6 +5,7 @@
         "module": "ESNext",
         "target": "ES5",
         "allowJs": true,
+        "allowSyntheticDefaultImports": true,
         "moduleResolution": "node",
         "plugins": [{ "name": "typescript-plugin-css-modules" }]
     }

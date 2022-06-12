@@ -1,6 +1,6 @@
 import { Toolbox } from "./ui/Toolbox";
 import { newDiv, elementInsertBack } from "./util/dom";
+import { toolboxContainer } from "./ui/globalElement";
 
-const toolboxContainer = newDiv({ id: "luogu-toolbox-container" });
-elementInsertBack(toolboxContainer, new Toolbox(toolboxContainer).ele);
+elementInsertBack(toolboxContainer, new Toolbox().ele);
 elementInsertBack(document.body, toolboxContainer);

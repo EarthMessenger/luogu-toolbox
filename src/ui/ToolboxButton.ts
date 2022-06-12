@@ -7,7 +7,7 @@ class ToolboxButton extends ToolboxComponent {
         super(
             newDiv({
                 id: "luogu-toolbox-button",
-                classes: [classes["toolbox-button"]],
+                classes: [classes["toolbox-button"], classes["toolbox-shadow"]],
             })
         );
         const icon = document.createElement("span");

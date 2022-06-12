@@ -5,23 +5,26 @@ import { ToolboxPanel } from "./ToolboxPanel";
 import classes from "./toolbox-ui.module.css";
 
 class Toolbox extends ToolboxComponent {
-    rootContainer: HTMLElement;
-    constructor(rootContainer: HTMLElement) {
+    constructor() {
         super(
             newDiv({
                 id: "luogu-toolbox",
                 classes: ["lfe-vars", classes["toolbox-vars"]],
             })
         );
-        this.rootContainer = rootContainer;
 
-        const panel = new ToolboxPanel(this.rootContainer);
+        const toolboxSidebar = newDiv({
+            id: "toolbox-sidebar",
+            classes: classes["toolbox-sidebar"],
+        });
+        const panel = new ToolboxPanel();
         const button = new ToolboxButton();
         button.ele.onclick = () => {
             panel.toggle();
         };
-        elementInsertBack(this.ele, button.ele);
-        elementInsertBack(this.ele, panel.ele);
+        elementInsertBack(toolboxSidebar, button.ele);
+        elementInsertBack(toolboxSidebar, panel.ele);
+        elementInsertBack(this.ele, toolboxSidebar);
     }
 }
 

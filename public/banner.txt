@@ -6,4 +6,5 @@
 // @version     PKG.VERSION
 // @author      PKG.AUTHOR
 // @description PKG.DESCRIPTION
+// @grant       GM_xmlhttpRequest
 // ==/UserScript==
