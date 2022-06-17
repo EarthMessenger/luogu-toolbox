@@ -2,10 +2,10 @@
 // @name        Luogu Toolbox
 // @namespace   Violentmonkey Scripts
 // @match       https://www.luogu.com.cn/*
-// @grant       none
-// @version     0.0.2
+// @version     0.0.3
 // @author      earthmessenger
 // @description a useful userscript for luogu
+// @connect     oi-wiki.org
 // @grant       GM_xmlhttpRequest
 // ==/UserScript==
 
